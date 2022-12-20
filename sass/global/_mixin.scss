@@ -1,14 +1,5 @@
 @use "./global/variables" as var;
 
-@mixin primarybtn($btn-padding, $btn-background:var.$primary, $btn-color:var.$white ) {
-    text-decoration: none;
-    padding: $btn-padding;
-    background-color: $btn-background;
-    color: $btn-color;
-    border-radius: 50px;
-
-}
-
 @mixin mq($breakpoint) {
 
 	@media #{map-get(var.$breakpoints, $breakpoint)} {

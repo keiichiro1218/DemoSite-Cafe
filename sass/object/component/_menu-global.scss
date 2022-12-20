@@ -1,0 +1,27 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-menu-global {
+    display: flex;
+    align-items: center;
+
+}
+
+.c-menu-global__footer {
+    justify-content: center;
+
+}
+
+.c-menu-global__list {
+    
+    a {
+        padding: 22px 10px;
+        font-size: 14px;
+        display: block;
+
+        @include mixin.mq('tab') {
+            font-size: 18px;
+        }
+        
+    }
+}

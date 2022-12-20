@@ -1,0 +1,127 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-address {
+
+    @include mixin.mq('tab') {
+		position: relative;
+	}
+}
+
+.p-address__inner {
+    margin-top: 56px;
+    margin-bottom: 98px;
+
+    @include mixin.mq('tab') {
+		display: flex;
+        align-items: center;
+	}
+}
+
+.p-address__detail {
+    
+
+    @include mixin.mq('tab') {
+		// justify-content: center;
+        display: inline-block;
+        margin-left: 13%;
+	}
+    
+}
+
+.p-address__name {
+    font-size: 32px;
+    font-weight: 400;
+    color: var.$border-black;
+    text-align: center;
+    font-family: reross-quadratic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    @include mixin.mq('tab') {
+		text-align: start;
+        margin-bottom: 25px;
+	}
+
+    span {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    &::after {
+        content: "（ ガーデンサラダ  ）";
+        font-size: 16px;
+        display: block;
+
+        @include mixin.mq('tab') {
+		// display: inline-block;
+        display: inline;
+
+	    }
+    }
+}
+
+.p-address__post {
+    margin: 24px 7% 40px;
+    // margin-top: 24px;
+
+    @include mixin.mq('tab') {
+		margin: 0;
+	}
+
+}
+
+.p-adress__content {
+    font-size: 16px;
+
+    @include mixin.mq('tab') {
+        font-size: 18px;
+        margin-bottom: 17px;
+    }
+
+    p {
+        @include mixin.mq('tab') {
+            margin-bottom: 5px;
+            
+        }
+    }
+
+}
+
+.p-address__tr {
+
+    @include mixin.mq('tab') {
+        line-height: 27px;
+        
+        &:nth-of-type(-n+2) {
+            margin-bottom: 5px;
+            
+          }
+        
+    }
+
+
+}
+
+.p-address__td {
+    width: 27%;
+
+    @include mixin.mq('tab') {
+		vertical-align: top;
+	}
+
+}
+
+.p-address__img {
+    background-image: url(../assets/img_store-exterior.svg);
+    
+    
+    @include mixin.mq('tab') {
+        width: 48%;
+        height: 500px;
+        margin-left: auto;
+        background-size: contain;
+    
+
+	}
+}

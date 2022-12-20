@@ -1,0 +1,6 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.u-img-store {
+    background-image: url(../assets/img-store.svg);
+}

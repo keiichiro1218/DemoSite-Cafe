@@ -1,99 +1,18 @@
 @use "./global/variables" as var;
 @use "./global/mixin" as mixin;
 
-.c-card01 {
-    width: 24%;
-    position: relative;
-
-    @include mixin.mq('tab-middle') {
-        width: 100%;
-        margin-bottom: 84px;
-    }
-
-    &::before {
-        content: "01";
-        position: absolute;
-        font-weight: 700;
-        font-size: 48px;
-        top: -10%;
-        left: -10%;
-        z-index: 10;
-
-        @include mixin.mq('tab-middle') {
-            font-size: 48px;
-            left: 0;
-        }
-    }
-}
-
-.c-card02 {
-    width: 24%;
-    position: relative;
-
-    @include mixin.mq('tab-middle') {
-        width: 100%;
-        margin-bottom: 90px;
-    }
-    
-    &::before {
-        content: "02";
-        position: absolute;
-        font-weight: 700;
-        font-size: 48px;
-        top: -10%;
-        left: -10%;
-        z-index: 10;
-
-        @include mixin.mq('tab-middle') {
-            font-size: 48px;
-            left: 0;
-        }
-    }
-}
-
-.c-card03 {
-    width: 24%;
-    position: relative;
-
-    @include mixin.mq('tab-middle') {
-        width: 100%;
-    }
-
-    &::before {
-        content: "03";
-        position: absolute;
-        font-weight: 700;
-        font-size: 48px;
-        top: -10%;
-        left: -10%;
-
-        @include mixin.mq('tab-middle') {
-            font-size: 48px;
-            left: 0;
-        }
-    }
-}
-
-.c-card__img {
-    background-color: var.$background-blue;
-    padding: 21px 60px;
-    border-radius: 30px;
-
-    img {
-        width: 100%;
-
-    }
-}
-
-.c-card__content {
+.c-card {
     text-align: center;
+    padding: 10px;
+    background-color: var.$white;
+
+    @include mixin.mq('tab') {
+        padding: 13px;
+	}
+
 }
 
-.c-card__title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    margin-top: 16px;
-    margin-bottom: 8px;
+.c-card__inner {
+    border: 1px solid var.$border-black;
+    
 }
-

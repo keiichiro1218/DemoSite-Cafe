@@ -7,10 +7,6 @@
 /* # =================================================================
    # Global selectors
    # ================================================================= */
-
-   body.active {
-    position: fixed;
-  }
   
    html {
     box-sizing: border-box;
@@ -337,4 +333,12 @@
     background-color: #b3d4fc; /* Required when declaring ::selection */
     color: #000;
     text-shadow: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
   }

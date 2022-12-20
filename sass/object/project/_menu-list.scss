@@ -1,0 +1,16 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-menu-list__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.p-menu-list__item {
+
+    &:nth-child( n + 2) {
+        margin-left: 32px;
+
+    }
+}

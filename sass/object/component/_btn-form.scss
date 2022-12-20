@@ -1,0 +1,18 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-btn-form {
+    display: inline-block;
+    margin: 0 10px;
+    width: 100%;
+    
+    input {
+        padding: 15px 0 ;
+        background: var.$green;
+        color: var.$white;
+        width: 100%;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+    }
+}

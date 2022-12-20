@@ -1,0 +1,7 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-footer-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}

@@ -2,10 +2,141 @@
 @use "./global/mixin" as mixin;
 
 .p-main {
+    background-color: var.$black;
+    color: var.$white;
     position: relative;
+    overflow: hidden;
+}
 
-    @include mixin.mq('tab-middle') {
-		margin: 0 25%;
 
+.p-main__top {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.p-main__visual {
+    width: 86%;
+
+    @include mixin.mq('tab') {
+		width: 75%;
+	}
+}
+
+.p-main__text {
+    position: absolute;
+    // top: 30px;
+    left: 20px;
+    transform: translateY(-50%);
+    top: 50%;
+    
+    @include mixin.mq('tab') {
+        left: 13%;
+	}
+
+}
+
+.p-main__title {
+
+    @include mixin.mq('tab') {
+		margin-bottom: 30px;
+	}
+
+}
+
+.p-main__title-text {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+
+    @include mixin.mq('tab') {
+		font-size: 100px;
+        line-height: 100px;
+	}
+}
+
+.p-main__explanation {
+    font-size: 14px;
+    color: var.$white;
+
+    @include mixin.mq('tab') {
+		font-size: 32px;
+	}
+}
+
+.p-main__green {
+    background-color: var.$green;
+
+    @include mixin.mq('tab') {
+        padding: 10px 20px 10px 0;
+
+	}
+}
+
+.p-main__concept {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.p-main__concept-text {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+
+    @include mixin.mq('tab') {
+		font-size: 30px;
+	}
+
+    br {
+
+        @include mixin.mq('tab') {
+            display: none;
+        }
+
+    }
+}
+
+.p-main__concept-note {
+    z-index: 100;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 9%;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+
+    br {
+        display: none;
+
+        @include mixin.mq('tab') {
+            display: block;
+        }
+    }
+}
+
+.p-main__background-text {
+    position: absolute;
+    color: var.$gray;
+    font-size: 110px;
+    text-align: right;
+    bottom: 0;
+    right: -2%;
+    line-height: 80%;
+    font-family: reross-quadratic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    @include mixin.mq('tab') {
+		display: flex;
+        font-size: 280px;
+        text-align: start;
+        left: -3%;
+	}
+
+}
+
+.p-main__background-salada {
+
+    @include mixin.mq('tab') {
+		margin-left: 30px;
 	}
 }

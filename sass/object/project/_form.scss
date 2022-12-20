@@ -1,0 +1,69 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-form {
+    
+
+}
+
+.p-form__input {
+    display: block;
+    padding: 16px;
+    border: solid 1px var.$black;
+    width: 100%;
+    line-height: 23px;
+}
+
+.p-form__label {
+    margin-bottom: 6px;
+    display: block;
+    line-height: 22px;
+
+    @include mixin.mq('tab') {
+        font-size: 18px;
+        
+    }
+
+    &::after {
+        content: "必須";
+        color: var.$white;
+        background-color: var.$green;
+        border-radius: 6px;
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+}
+
+
+.p-form__margin-bottom {
+    margin-bottom: 32px;
+
+}
+
+.p-form__comment {
+
+    textarea {
+        border: solid 1px var.$black;
+        width: 100%;
+        padding: 13px;
+        height: 160px;
+    }
+}
+
+.p-form__checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.p-form__checkbox-input {
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.p-form__checkbox-label {
+    display: block;
+    font-size: 16px;
+    justify-content: center;
+}

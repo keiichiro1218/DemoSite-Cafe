@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/73db00d111.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/ebj4hur.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,349 +15,433 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="l-header ">
-        <h1 class="p-title">Ravek</h1>
-        <div class="p-hamburgerbtn">
-            <div class="p-hamburgerbtn__openbtn">
-                <span></span> 
-                <span></span> 
-                <span></span> 
-            </div>
-            <div class="p-headermenu">
-                <ul class="p-headermenu__list">
-                    <li class="p-headermenu__item"><a href="">特徴</a></li>
-                    <li class="p-headermenu__item"><a href="">導入実績</a></li>
-                    <li class="p-headermenu__item"><a href="">導入までの流れ</a></li>
-                    <li class="p-headermenu__item"><a href="">料金プラン</a></li>
-                    <li class="p-headermenu__item"><a href="">よくある質問</a></li>
-                    <a class="c-about-btn p-hamburgermenu__btn" href="">無料でRavekを使ってみる</a>
-                    <a class="c-button__sub p-hamburgermenu__btn" href="">資料をダウンロードする</a>
-                    <a class="c-button p-hamburgermenu__btn-none" href="">無料で使ってみる</a>
-                </ul>  
-            </div>
+    <header class="l-header">
+        <div class="l-header__inner">
+            <img class="p-header-logo" src="./assets/logo_header.svg" alt="">
+            <ul class="c-menu-global c-ff-reross u-fc--white">
+                <li class="c-menu-global__list">
+                    <a class="u-fc--white" href="">About</a>
+                </li>
+                <li class="c-menu-global__list">
+                    <a class="u-fc--white" href="">Menu</a>
+                </li>
+                <li class="c-menu-global__list">
+                    <a class="u-fc--white" href="">Shop</a>
+                </li>
+                <li class="c-menu-global__list">
+                    <a class="u-fc--white" href="">Contact</a>
+                </li>
+            </ul>
         </div>
+        <!-- /.l-header__inner -->
     </header>
-    <div class="l-contents">
-    <section class="l-main-visual">
-        <div class="l-inner p-main">
-            <div class="l-placement">
-                <div class="p-main-visual-content">
-                    <div class="p-main-visual-content__title">
-                        タスク管理は
-                        <br>
-                        時間をかけず、高速に。
-                    </div>
-                    <div class="p-main-visual-content__lead">
-                        Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を
-                        <br>
-                        簡単かつ高速にし、生産性を向上させるツールです。
-                    </div>
-                    <div class="p-main-visual-content__button">
-                        <a class="c-button" href="">まずは無料で使ってみる</a>
-                        <a class="c-button__sub" href="">資料をダウンロードする</a>
-                    </div>
+    <section class="p-main">
+        <div class="p-main__top">
+            <img class="p-main__visual" src="./assets/img_mv.svg" alt="">
+            <div class="p-main__text">
+                <div class="p-main__title">
+                    <p class="p-main__title-text c-ff-reross">Let's eat</p>
+                    <p class="p-main__title-text c-ff-reross">delicious</p>
+                    <p class="p-main__title-text c-ff-reross">salad.</p>
                 </div>
-                <div class="p-main-visual-content__img">
-                    <img src="./assets/main-visual.svg" alt="">
+                <!-- /.p-main__title -->
+                <div class="p-main__explanation">
+                    <p class="p-main__explanation__text">　健康のためじゃない、</p>
+                    <p class="p-main__explanation__text p-main__green">「おいしいから食べたい」サラダ</p>
                 </div>
+                <!-- /.p-main__explanation -->
             </div>
+            <!-- /.p-main__text -->
         </div>
-    </section>
-    <section class="l-explanation">
-            <div class="p-about l-inner">
-                <h2 class="p-about__title">タスク管理の時間を <br> 削除するツール</h2>
-                <div class="p-about__lead">
-                    <p class="p-about__text">
-                        Ravek（レイベック）は、<span>複数人が関わるプロジェクトでのタスク管理を簡単かつ高速にするツール</span>
-                        です。
-                    </p> 
-                    <p class="p-about__text-sub">
-                        タスクの登録や進捗管理の手間を減らし、わかりやすく見える化することで
-                        <br>タスク管理にかかる時間を極限まで減らし、本質的な業務に時間を使いましょう。
-                    </p>
-                </div>
-                <div class="p-about__btn">
-                    <a class="c-about-btn" href="">無料でRavekを使ってみる</a>
-                </div>
+        <!-- /.p-main___top -->
+        <div class="p-main__concept">
+            <div class="p-main__concept-text">
+                毎日食べるからこそ、<br>おいしいものを。
             </div>
-    </section>
-    <section class="l-feature-section">
-            <div class="p-feature l-inner">
-                <div class="p-feature__title">Ravekの3つの特長</div>
-                <div class="p-feature__main p-feature__main01">
-                    <div class="p-feature__content01">
-                        <div class="p-feature__text">
-                            <p class="p-feature__caption">タスクの種類・進捗を<br>ダッシュボードで確認可能</p>
-                            <p class="p-feature__caption-text" >Ravekはメンバーが入力したタスクを整理し、ダッシュボードにガントチャートとして表示。
-                                ダッシュボードを確認するだけで、誰のどのタスクがどの程度進んでいるのかを一目で把握できます。</p>
-                        </div>
-                    </div>
-                    <div class="p-feature__img01">
-                        <img src="./assets/feature01.svg" alt="">
-                    </div>
-                </div>
-                <div class="p-feature__main p-feature__rowreverse ">
-                    <div class="p-feature__content02">
-                        <div class="p-feature__text">
-                            <p class="p-feature__caption">タスクの入力がシンプルかつ簡単。</br>入力の手間が最小限に</p>
-                            <p class="p-feature__caption-text">タスク管理ツールで面倒になりがちなタスクの入力作業。<br>
-                                RavekはPC・スマートフォンのどちらでもシンプルかつ簡単に入力でき、手間が最小限に抑えられます。本質的な業務に時間を割きましょう。</p>
-                        </div>
-                    </div>
-                    <div class="p-feature__img02">
-                        <img src="./assets/feature02.svg" alt="">
-                    </div>
-                </div>
-                <div class="p-feature__main p-feature__main03">
-                    <div class="p-feature__content03">
-                        <div class="p-feature__text">
-                            <p class="p-feature__caption">SlackとのAPI連携<br>ツール切り替えの手間を削減</p>
-                            <p class="p-feature__caption-text">RavekはSlackと連携することで、Slack上でRavekをタスクを追加したり、確認したりできます。都度の切り替えの手間がなくなり、シームレスに扱えるのが特長です。Slackを導入しているなら違和感なく使用できます。</p>
-                        </div>
-                    </div>
-                    <div class="p-feature__img03">
-                        <img src="./assets/feature03.svg" alt="">
-                    </div>
-                </div>
+            <!-- /.p-main__concept-text -->
+            <div class="p-main__concept-note">
+                ヘルシーで栄養豊富なサラダは、健康のために<br>毎日食べようと思っている人は多いはず。
             </div>
-    </section>
-    <section class="p-recommend">
-        <div class="p-recommend__text">
-            <p>14日間の無料トライアル可能。</p>
-            <p>Ravekで快適なタスク管理を体験しよう</p>
-        </div>
-        <div class="p-recommnd__btn">
-            <a class="c-about-btn" href="">無料でRavekを使ってみる</a>
-        </div>
-    </section>
-    <section class="p-users">
-        <div class="p-users__title">導入実績</div>
-        <div class="p-users__archive">
-            <div class="p-users__img"><img src="./assets/users.svg" alt=""></div>
-            <div class="p-users__img"><img src="./assets/users.svg" alt=""></div>
-            <div class="p-users__img"><img src="./assets/users.svg" alt=""></div>
-            <div class="p-users__img"><img src="./assets/users.svg" alt=""></div>
-            <div class="p-users__img"><img src="./assets/users.svg" alt=""></div>
-            <div class="p-users__img"><img src="./assets/users.svg" alt=""></div>
-            <div class="p-users__img"><img src="./assets/users.svg" alt=""></div>
-            <div class="p-users__img"><img src="./assets/users.svg" alt=""></div>
-        </div>
-    </section>
-    <section class="p-flow">
-        <div class="l-inner p-flow__inner">
-            <div class="p-flow__title">導入までの流れ</div>
-            <div class="p-flow__content">
-                <div class="c-card01">
-                    <div class="c-card__img c-triangle">
-                        <img src="./assets/flow01.svg" alt="">
-                    </div>
-                    <div class="c-card__content">
-                        <p class="c-card__title">無料トライアルを開始</p>
-                        <p>まずはRavekの使用感をお試しください。最初の14日間は無料でご使用いただけます。</p>
-                    </div>
-                </div>
-                <div class="c-card02">
-                    <div class="c-card__img c-triangle">
-                        <img src="./assets/flow02.svg" alt="">
-                    </div>
-                    <div class="c-card__content">
-                        <p class="c-card__title">無料トライアルを開始</p>
-                        <p>まずはRavekの使用感をお試しください。最初の14日間は無料でご使用いただけます。</p>
-                    </div>
-                </div>
-                <div class="c-card03">
-                    <div class="c-card__img">
-                        <img src="./assets/flow03.svg" alt="">
-                    </div>
-                    <div class="c-card__content">
-                        <p class="c-card__title">無料トライアルを開始</p>
-                        <p>まずはRavekの使用感をお試しください。最初の14日間は無料でご使用いただけます。</p>
-                    </div>
-                </div>
+            <!-- /.p-main__concept-note -->
+            <div class="p-main__concept-note">
+                毎日食べるからこそ品質の良い、飽きのこない、<br>おいしいものを楽しんでいただきたい。
             </div>
+            <!-- /.p-main__concept-note -->
+            <div class="p-main__concept-note">
+                そんな想いからできた「おいしいから食べたい」サラダを<br>あなたにお届けいたします。
+            </div>
+            <!-- /.p-main__concept-note -->
+            <div class="p-main__background-text">
+                <p>
+                    Garden
+                </p>
+                <p class="p-main__background-salada">
+                    Salad
+                </p>
+            </div>
+            <!-- /.p-main__background-text -->
         </div>
+        <!-- /.p-main__concept -->
     </section>
-    <section class="p-recommend">
-        <div class="p-recommend__text">
-            <p>14日間の無料トライアル可能。</p>
-            <p>Ravekで快適なタスク管理を体験しよう</p>
+    <section class="p-about">
+        <div class="c-section-title p-about__title ">
+            About
         </div>
-        <div class="p-recommnd__btn">
-            <a class="c-about-btn" href="">無料でRavekを使ってみる</a>
+        <!-- /.c-section-title -->
+        <div class="p-about__inner">
+            <div class="p-about__content u-fd-rowvers">
+                <div class="p-about__text p-about__text01">
+                    <div class="p-about__text-wrap">
+                        <p class="p-about__text-title">全ての食材が安心の<span>国産</span></p>
+                        <p class="p-about__text-detail">TF Garden Saladaの食材は全て産地を公表をしています。
+                            信頼できる農家さんから直接買い取り、
+                            その日採れたものをその日のうちに厨房へ。</p>
+                    </div>
+                    <!-- /.p-about__text-wrap -->
+                </div>
+                <!-- /.p-about__text -->
+                <div class="p-about__img">
+                    <img src="./assets/img_about01.svg" alt="">
+                </div>
+                <!-- /.p-about__img -->
+            </div>
+            <!-- /.p-about__content -->
+            <div class="p-about__content">
+                <div class="p-about__text p-about__text02">
+                    <div class="p-about__text-wrap">
+                        <p class="p-about__text-title">全ての食材が安心の<span>国産</span></p>
+                        <p class="p-about__text-detail">TF Garden Saladaの食材は全て産地を公表をしています。
+                            信頼できる農家さんから直接買い取り、
+                            その日採れたものをその日のうちに厨房へ。</p>
+                    </div>
+                    <!-- /.p-about__text-wrap -->
+                </div>
+                <!-- /.p-about__text -->
+                <div class="p-about__img">
+                    <img src="./assets/img_about02.svg" alt="">
+                </div>
+                <!-- /.p-about__img -->
+            </div>
+            <!-- /.p-about__content -->
+            <div class="p-about__content u-fd-rowvers">
+                <div class="p-about__text p-about__text03">
+                    <div class="p-about__text-wrap">
+                        <p class="p-about__text-title">全ての食材が安心の<span>国産</span></p>
+                        <p class="p-about__text-detail">TF Garden Saladaの食材は全て産地を公表をしています。
+                            信頼できる農家さんから直接買い取り、
+                            その日採れたものをその日のうちに厨房へ。</p>
+                    </div>
+                    <!-- /.p-about__text-wrap -->
+                </div>
+                <!-- /.p-about__text -->
+                <div class="p-about__img">
+                    <img src="./assets/img_about03.svg" alt="">
+                </div>
+                <!-- /.p-about__img -->
+            </div>
+            <!-- /.p-about__content -->
         </div>
+        <!-- /.p-about__inner -->
     </section>
-    <section class="p-price">
-        <div class="l-inner">
-            <div class="p-price__title">料金プラン</div>
-            <div class="table">
-            <table class="p-table">
-               <tr class="p-table__head">
-                    <th class="p-table__space"></th>
-                    <th class="p-table__head-left">
-                        <div class="p-table__price">
-                            月額 <span class="p-table__bold">1,980</span> 円
+    <section class="c-visual u-img-salad">
+    </section>
+    <section class="p-menu">
+        <div class="p-menu__inner">
+            <div class="c-section-title p-menu__title">
+                Menu
+            </div>
+            <!-- /.c-section-title -->
+            <div class="p-menu__pfc">
+                P : タンパク質　F : 脂質　C : 糖質
+            </div>
+            <!-- /.p-menu__pfc -->
+            <div class="p-menu-recommend">
+                <div class="p-menu-recommend__menu">
+                    <img class="p-menu-recommend__img" src="./assets/img_basil-salad.svg" alt="">
+                    <div class="c-card">
+                        <div class="c-card__inner">
+                            <div class="c-category p-menu-recommend__recommendation">
+                                <p>店長おすすめ</p>
+                            </div>
+                            <!-- /.p-menu__recommendation -->
+                            <div class="c-menu-detail">
+                                <p class="c-menu-detail__name">カッテージチーズと<br>バジルのサラダ</p>
+                                <p class="c-menu-detail__price"><span class="p-menu__price-mark">¥</span>1,100<span class="p-menu__price-tax">（税込）</span></p>
+                                <p class="c-menu-detail__kcal">305kcal   P : 16.2g   F : 12.5g   C : 13.3g</p>
+                            </div>
+                            <!-- /.p-menu__recommend -->
                         </div>
-                        <div class="">
-                            <a class="c-button__white p-table__button-table" href="">無料で使ってみる</a>
+                        <!-- /.p-menu__card-inner -->
+                    </div>
+                    <!-- /.c-card -->
+                </div>
+                <!-- /.p-menu__cards -->
+            </div>
+            <!-- /.p-menu__contents -->
+            <div class="p-menu-reg">
+                <div class="p-menu-reg__card">
+                    <img class="p-menu-reg__img" src="./assets/img_avocad-salad.svg" alt="">
+                    <div class="c-card">
+                        <div class="c-card__inner">
+                            <div class="p-menu-reg__detail c-menu-detail">
+                                <p class="c-menu-detail__name">アボガドサラダ</p>
+                                <p class="c-menu-detail__price"><span class="p-menu__price-mark">¥</span>980<span class="p-menu__price-tax">（税込）</span></p>
+                                <p class="c-menu-detail__kcal">425kcal   P : 12.2g   F : 15.3g   C : 16.8g</p>
+                            </div>
+                            <!-- /.p-menu-reg__detail -->
                         </div>
-                    </th>
-                    <th class="p-table__head-center">
-                        <div class="p-table__head-basic p-table__price">月額 <span class="p-table__bold-basic">2,980</span>円</div>
+                        <!-- /.c-card__inner -->
+                    </div>
+                    <!-- /.c-card -->
+                </div>
+                <!-- /.c-card -->
+                <div class="p-menu-reg__card">
+                    <img class="p-menu-reg__img" src="./assets/img_chicken-salad.svg" alt="">
+                    <div class="c-card">
+                        <div class="c-card__inner">
+                            <div class="p-menu-reg__detail c-menu-detail">
+                                <p class="c-menu-detail__name">チキンサラダ</p>
+                                <p class="c-menu-detail__price"><span class="p-menu__price-mark">¥</span>980<span class="p-menu__price-tax">（税込）</span></p>
+                                <p class="c-menu-detail__kcal">455kcal   P : 20.2g   F : 11.3g   C : 15.7g</p>
+                            </div>
+                            <!-- /.p-menu-reg__detail -->
+                        </div>
+                        <!-- /.c-card__inner -->
+                    </div>
+                    <!-- /.c-card -->
+                </div>
+                <!-- /.p-menu-reg__card  -->
+            </div>
+            <div class="p-instagram">
+                <div class="c-card p-instagram__card">
+                    <div class="c-card__inner">
+                        <div class="p-instagram__title c-category u-ff-reross">
+                            <p>Instagram</p>
+                        </div>
+                        <!-- /.p-instagram__title -->
+                        <div class="p-instagram__text">
+                            <p>Instagramにはさらに詳しいメニュー内容などを載せています！</p>
+                        </div>
+                        <!-- /.p-instagram__text -->
+                        <div class="p-instagram__img">
+                            <div class="p-instagram__photo">
+                                <img class="p-instagram__post" src="./assets/Instagram01.svg" alt="">
+                            </div>
+                            <!-- /.p-instagram__photo -->
+                            <div class="p-instagram__photo">
+                                <img class="p-instagram__post" src="./assets/Instagram02.svg" alt="">
+                            </div>
+                            <!-- /.p-instagram__photo -->
+                            <div class="p-instagram__photo">
+                                <img class="p-instagram__post" src="./assets/Instagram03.svg" alt="">
+                            </div>
+                            <!-- /.p-instagram__photo -->
+                            <div class="p-instagram__photo">
+                                <img class="p-instagram__post" src="./assets/Instagram04.svg" alt="">
+                            </div>
+                            <!-- /.p-instagram__photo -->
+                        </div>
+                        <!-- /.p-instagram__img -->
+                        <div class="p-instagram__url">
+                            <a href="" class="p-instagram__url-link">
+                                ID：tf_gardensalad
+                            </a>
+                        </div>
+                        <!-- /.p-instagram__url -->
+                        <div class="p-instagram__btn">
+                            <a href="" class="c-btn-instagram">
+                                もっとメニューを見る
+                                <!-- <img class="c-btn-instagram__icon" src="./assets/Vector.png" alt=""> -->
+                            </a>
+                        </div>
+                        <!-- /.p-instagram__more-menu -->
+                    </div>
+                    <!-- /.c-card__inner -->
+                </div>
+                <!-- /.p-instagram__card -->
+            </div>
+            <!-- /.p-instagram -->
+        </div>
+        <!-- /.p-menu__inner -->
+    </section>
+    <section class="c-visual u-img-store">
+    </section>
+    <section class="p-shop">
+        <div class="p-shop__title c-section-title">
+            Shop
+        </div>
+        <!-- /.p-shop__title  -->
+        <div class="p-shop__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1850.0890788053707!2d139.7047657286057!3d35.66791801740143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca3f060eccb%3A0xc323bb5a529e43a2!2z44CSMTUwLTAwMDEg5p2x5Lqs6YO95riL6LC35Yy656We5a6u5YmN77yV5LiB55uu77yR77yQ4oiS77yR77yQIGd5bGUgMkY!5e0!3m2!1sja!2sjp!4v1669276719901!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- /.p-shop__map -->
+        <div class="p-address">
+            <div class="p-address__inner">
+                <div class="p-address__detail">
+                    <div class="p-address__name">
+                        <span>
+                            TF
+                        </span> 
+                        Garden Salad
+                    </div>
+                    <div class="p-address__post">
+                        <div class="p-adress__content">
+                            <p>〒150 - 0000</p>
+                            <p>東京都渋谷区表参道 10 - 20 - 20</p>
+                            <p>Tel. 090 - 1234 - 8899</p>
+                        </div>
+                        <!-- /.p-adress__content -->
+                        <table>
+                            <tr class="p-address__tr">
+                              <td class="p-address__td">営業時間</td><td class="p-addred">11:00 ~ 20:00</td>
+                            </tr>
+                            <tr class="p-address__tr">
+                              <td class="p-address__td">定休日</td><td class="p-a__td">日曜</td>
+                            </tr>
+                            <tr>
+                              <td class="p-address__td">アクセス</td><td class="p-ss__td">東京メトロ千代田線「明治神宮駅前」
+                                <br>
+                                    5番出口から徒歩5分
+                                <br> 
+                                JR「原宿駅」東口から徒歩10分</td>
+                            </tr>
+                        </table>
 
-                        <div class=""><a class="c-button__primary p-table__button-table" href="">無料で使ってみる</a></div>
-                    </th>
-                    <th class="p-table__head-right">
-                        <div class="p-table__price">
-                            月額 <span class="p-table__bold">4,980</span> 円
-                        </div>
-                        <div>
-                            <a class="c-button__white p-table__button-table" href="">無料で使ってみる</a>
-                        </div>
-                    </th>
-                </tr>
-               <tr class="p-table__tr p-table__bg-color">
-                    <th class="p-table__td">プロジェクト数</th>
-                    <td class="p-table__td">5</td>
-                    <td class="p-table__basic">15</td>
-                    <td class="p-table__td">15</td>
-               </tr>
-               <tr class="p-table__tr">
-                    <th class="p-table__td">メンバー数</th>
-                    <td class="p-table__td">10</td>
-                    <td class="p-table__basic">30</td>
-                    <td class="p-table__td">10</td>
-               </tr>
-               <tr class="p-table__tr p-table__bg-color">
-                    <th class="p-table__td">ストレージ(容量)</th>
-                    <td class="p-table__td">25GB</td>
-                    <td class="p-table__basic">50GB</td>
-                    <td class="p-table__td">100GB</td>
-               </tr>
-               <tr class="p-table__tr">
-                    <th class="p-table__td">2段階認証</th>
-                    <td class="p-table__td"></td>
-                    <td class="p-table__basic">〇</td>
-                    <td class="p-table__td">〇</td>
-               </tr>
-               <tr class="p-table__tr p-table__bg-color">
-                    <th class="p-table__td">IP制限</th>
-                    <td class="p-table__td"></td>
-                    <td class="p-table__basic"></td>
-                    <td class="p-table__td">〇</td>
-               </tr>
-               <tr class="p-table__tr">
-                    <th class="p-table__td">メールサポート</th>
-                    <td class="p-table__td">〇</td>
-                    <td class="p-table__basic">〇</td>
-                    <td class="p-table__td">〇</td>
-               </tr>
-               <tr class="p-table__tr p-table__bg-color">
-                    <th class="p-table__td">チャットサポート</th>
-                    <td class="p-table__td">〇</td>
-                    <td class="p-table__basic">〇</td>
-                    <td class="p-table__td">〇</td>
-              </tr>
-               <tr class="p-table__tr p-table__button">
-                    <th class="p-table__td"></th>
-                    <td ><a class="c-button__white p-table__button-table" href="">無料で使ってみる</a></td>
-                    <td ><a class="c-button__primary p-table__button-table" href="">無料で使ってみる</a></td>
-                    <td ><a class="c-button__white p-table__button-table" href="">無料で使ってみる</a></td>
-              </tr>
-            </table>
+                    </div>
+                </div>
+                <div class="p-address__img c-visual">
+                </div>
+                <!-- /.p-address__img -->
             </div>
+            <!-- /.p-address__inner -->
         </div>
+        <!-- /.p-address -->
+        <div class="p-post-card">
+            <div class="p-post-card__inner">
+                <img class="p-post-card__stamp" src="./assets/img_stamp.svg" alt="">
+                <div class="p-post-card__img">
+                    <!-- <img class="p-post-card__img-terras" src="./assets/img：オープンテラス.png" alt="">
+                    <img class="p-post-card__img-take-out" src="./assets/img：テイクアウト.png" alt=""> -->
+                    <div class="p-post-card__img-terras p-post-card__photo">
+
+                    </div>
+                    <div class="p-post-card__img-take-out p-post-card__photo">
+
+                    </div>
+                    <!-- /.p-post-card__img-take-out -->
+                    <!-- /.p-post-card__img-terras -->
+                </div>
+                <!-- /.p-post-card__img -->
+                <div class="p-post-card__text">
+                    <div class="p-post-card__title">
+                        Dear You.
+                    </div>
+                    <!-- /.p-post-card__title -->
+                    <div class="p-post-card__body">
+                        <p>当店から徒歩5分ほどの場所に、オープンテラスの場所があります。お天気がいい日は、木漏れ日の中で風を感じながら食べるのもおすすめです。</p>
+                        <p>テイクアウトもご用意できるので、ぜひご利用ください。</p>
+                    </div>
+                    <!-- /.p-post-card__body -->
+                    <div class="p-post-card__message">
+                        Have a nice day !!
+                    </div>
+                    <!-- /.p-post-card__message -->
+                </div>
+                <!-- /.p-post-card__text -->
+            </div>
+            <!-- /.p-post-card__inner -->
+        </div>
+        <!-- /.p-post-card -->
     </section>
-    <section class="p-question">
-        <div class="p-question__inner">
-            <div class="p-question__title">よくある質問</div>
-            <div class="p-question__questions">
-                <div class="p-question__question">
-                    <div class="p-question__query">
-                        <div class="p-question__q">Q</div>
-                        <div class="p-question__question-text">Ravekはユーザー1人あたりの課金制なのですか？</div>
-                    </div>
-                    <div class="p-question__answer">
-                        <div class="p-question__a">A</div>
-                        <div class="p-question__answer-text">いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。
-                            もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。</div>
-                    </div>
-                </div>
-                <div class="p-question__question">
-                    <div class="p-question__query">
-                        <div class="p-question__q">Q</div>
-                        <div class="p-question__question-text">Ravekはユーザー1人あたりの課金制なのですか？</div>
-                    </div>
-                    <div class="p-question__answer">
-                        <div class="p-question__a">A</div>
-                        <div class="p-question__answer-text">いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。
-                            もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。</div>
-                    </div>
-                </div>
-                <div class="p-question__question">
-                    <div class="p-question__query">
-                        <div class="p-question__q">Q</div>
-                        <div class="p-question__question-text">Ravekはユーザー1人あたりの課金制なのですか？</div>
-                    </div>
-                    <div class="p-question__answer">
-                        <div class="p-question__a">A</div>
-                        <div class="p-question__answer-text">いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。
-                            もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。</div>
-                    </div>
-                </div>
-                <div class="p-question__question">
-                    <div class="p-question__query">
-                        <div class="p-question__q">Q</div>
-                        <div class="p-question__question-text">Ravekはユーザー1人あたりの課金制なのですか？</div>
-                    </div>
-                    <div class="p-question__answer">
-                        <div class="p-question__a">A</div>
-                        <div class="p-question__answer-text">いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。
-                            もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。</div>
-                    </div>
-                </div>
+    <section class="p-contact">
+        <div class="p-contact__inner">
+            <div class="c-section-title p-contact__title">
+                Contact
             </div>
+            <!-- /.p-contact__title -->
+            <div class="p-contact__text p-form__margin-bottom">
+                ご質問などは、下記のフォームよりお問い合わせください。
+            </div>
+            <!-- /.p-contact__text -->
+            <div class="p-form">
+                <div class="p-form__name p-form__margin-bottom">
+                    <label class="p-form__label" for="name">お名前</label>
+                    <input class="p-form__input" id="name" type="text" name="name" placeholder="例 )  山田　花子">
+                </div>
+                <!-- /.p-form__name -->
+                <div class="p-form__mail p-form__margin-bottom">
+                    <label class="p-form__label" for="mail">メールアドレス</label>
+                    <input class="p-form__input" id="mail" type="email" name="email" placeholder="メールアドレス">
+                </div>
+                <!-- /.p-form__mail -->
+                <div class="p-form__mail p-form__margin-bottom">
+                    <label class="p-form__label" for="telephone">電話番号</label>
+                    <input class="p-form__input" id="telephone" type="telephone" name="telephone" placeholder="例 )  090-0000-0000">
+                </div>
+                <!-- /.p-form__mail -->
+                <div class="p-form__comment p-form__margin-bottom">
+                    <label class="p-form__label" for="comment">お問い合わせ内容：</label>
+                    <textarea id="comment" rows="10" cols="30" placeholder="お問い合わせ内容を入力して下さい"></textarea>
+                </div>
+                <!-- /.p-form__comment -->
+                <div class="p-form__checkbox">
+                    <input class="p-form__checkbox-input" type="checkbox" id="horns" name="horns">
+                    <label class="p-form__checkbox-label" for="horns">プライバシーポリシーに同意する。</label>
+                </div>
+                <!-- /.p-form__checkbox -->
+                <div class="c-btn-form">
+                    <input type="submit" value="送信">
+                </div>
+                <!-- /.c-btn-form -->
+            </div>
+            <!-- /.p-form -->
         </div>
+        <!-- /.p-contact__inner -->
     </section>
-    <section class="p-recommend">
-        <div class="p-recommend__text">
-            <p>14日間の無料トライアル可能。</p>
-            <p>Ravekで快適なタスク管理を体験しよう</p>
-        </div>
-        <div class="p-recommnd__btn">
-            <a class="c-about-btn" href="">無料でRavekを使ってみる</a>
-        </div>
-    </section>
-    <footer class="l-footer">
-        <div class="p-footer-contents l-inner">
-            <div class="p-footer-contents__left">
-                <p class="p-footer-contents__logo">Ravek</p>
-                <ul class="p-footer-contents__list">
-                    <li>会社概要</li>
-                    <li>プライバシーポリシー</li>
-                    <li>利用規約</li>
-                    <li>お問い合わせ</li>
-                </ul>
-                <div class="p-footer-contents__copyright">
-                    <p>© Ravek Inc. 2021</p>
-                    <p>Illustration by FreepikStoryset</p>
-                </div>
+    <footer class="p-footer">
+        <div class="p-footer__sns">
+            <div class="p-footer__sns-link">
+                <a href="" class="p-footer__sns-logo">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
             </div>
-            <div class="p-footer-contents__right">
-                <div class="p-footer-contents__sns">Share on SNS</div>
-                <div class="p-footer-contents__sns-logo">
-                    <a class="div" href="">
-                        <span class="twitter"></span>
-                    </a>
-                    <a class="div__insta" href="">
-                        <span class="insta"></span>
-                    </a>
-                    <a class="div__facebook" href="">
-                        <span class="facebook"></span>
-                    </a>
-                </div>
+            <!-- /.p-footer__sns-link -->
+            <div class="p-footer__sns-link">
+                <a href="" class="p-footer__sns-logo">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </div>
+            <!-- /.p-footer__sns-link -->
+            <div class="p-footer__sns-link">
+                <a href="" class="p-footer__sns-logo">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+            <!-- /.p-footer__sns-link -->
         </div>
+        <!-- /.p-footer__sns -->
+        <ul class="c-menu-global  c-menu-global__footer c-ff-reross ">
+            <li class="c-menu-global__list">
+                <a class="u-fc--black" href="">About</a>
+            </li>
+            <li class="c-menu-global__list">
+                <a class="u-fc--black" href="">Menu</a>
+            </li>
+            <li class="c-menu-global__list">
+                <a class="u-fc--black" href="">Shop</a>
+            </li>
+            <li class="c-menu-global__list">
+                <a class="u-fc--black" href="">Contact</a>
+            </li>
+        </ul>
+        <div class="p-footer-logo">
+            <img src="./assets/logo_footer.svg" alt="">
+        </div>
+        <!-- /.p-footer-logo -->
+        <div class="p-copyright">
+            <p>©︎ TF Garden Salad.</p>
+        </div>
+        <!-- /.p-copyright -->
     </footer>
-</div>
 </body>
 </html>

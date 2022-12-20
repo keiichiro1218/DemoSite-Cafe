@@ -1,0 +1,41 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-shop {
+    padding: 64px 0 0;
+    background-color: var.$gray-background;
+
+    @include mixin.mq('tab') {
+      padding: 120px 0;
+      
+  }
+}
+
+.p-shop__title {
+
+    &::before {
+        content: "店舗情報";
+
+    }
+}
+
+.p-shop__map {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 66%;
+
+  @include mixin.mq('tab') {
+		padding-top: 30%;
+
+	}
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+}

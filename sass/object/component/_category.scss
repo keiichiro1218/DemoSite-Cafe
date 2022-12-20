@@ -1,0 +1,14 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-category {
+    background-color: var.$green;
+    display: inline-block;
+    padding: 38px 50px 18px;
+
+    @include mixin.mq('tab') {
+        padding: 9px 51px 15px;
+	}
+
+}
+

@@ -1,0 +1,10 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-menu-item__footer {
+    color: var.$black;
+}
+
+.c-menu-item__header {
+    color: var.$white;
+}

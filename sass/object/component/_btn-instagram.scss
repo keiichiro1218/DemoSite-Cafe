@@ -1,0 +1,26 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-btn-instagram {
+    font-size: 16px;
+    font-weight: 700;
+    border: solid 1px var.$border-black;
+    padding: 16px 40px 16px 37px;
+    height: 100%;
+    display: inline-block;
+    color: var.$black;
+
+    &::after {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        content: "\f08e";
+        display: inline;
+    }
+
+}
+
+.c-btn-instagram__icon {
+   margin-left: 16px;
+   display: inline-block;
+
+}

@@ -1,0 +1,16 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-visual {
+    width: 100%;
+    height: 250px;
+    background-position: 50% 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mixin.mq('tab') {
+		height: 450px;
+	}
+
+
+}

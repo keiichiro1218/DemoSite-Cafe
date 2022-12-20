@@ -1,0 +1,40 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-section-title {
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 68px;
+    font-family: reross-quadratic, sans-serif;
+    font-style: normal;
+
+    @include mixin.mq('tab') {
+		font-size: 48px;
+        margin-bottom: 96px;
+	}
+
+    &::before {
+        color: var.$green;
+        font-size: 14px;
+        display: block;
+        font-family: "Noto Sans JP";
+
+        @include mixin.mq('tab') {
+            font-size: 18px;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        bottom: -10px;
+        content: '';
+        width: 50px;
+        background: var.$green;
+        height: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+}
+

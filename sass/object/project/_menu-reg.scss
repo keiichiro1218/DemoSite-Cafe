@@ -1,0 +1,58 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-menu-reg {
+
+    @include mixin.mq('tab') {
+        display: flex;
+        margin-top: 443px;
+        margin-left: 8.5%;
+        margin-right: 8.5%;
+
+        &:nth-child(2) {
+            margin-left: 2%;
+        }
+		
+	}
+}
+
+.p-menu-reg__card {
+    position: relative;
+    margin-bottom: 48px;
+
+    @include mixin.mq('tab') {
+		width: 49%;
+
+        &:nth-child(2) {
+            margin-left: 3%;
+        }
+	}
+}
+
+.p-menu-reg__img {
+    // position: absolute;
+    // width: 81%;
+    // top: -110%;
+    // left: 50%;
+    // transform:  translateX(-50%);
+    width: 100%;
+    margin-bottom: -56px;
+
+    @include mixin.mq('tab') {
+        position: absolute;
+        width: 81%;
+        top: -110%;
+        left: 50%;
+        transform:  translateX(-50%);
+		
+	}
+}
+
+.p-menu-reg__detail {
+    margin-top: 56px;
+
+    @include mixin.mq('tab') {
+        margin-top: 76px;
+		
+	}
+}

@@ -1,0 +1,50 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-menu-recommend {
+    margin-top: 48px;
+    margin-bottom: 58px;
+
+    @include mixin.mq('tab') {
+		display: flex;
+	}
+    
+}
+
+.p-menu-recommend__menu {
+    position: relative;  
+
+    @include mixin.mq('tab') {
+        width: 45%;
+        margin-right: 14%;
+        margin-left: auto;
+	}
+    
+}
+
+.p-menu-recommend__img {
+    margin-bottom: -55px;
+    right: 10px;
+    position: relative;
+    width: 100%;
+    
+    @include mixin.mq('tab') {
+        width: 78%;
+        top: 47%;
+        left: -60%;
+        transform: translateY(-50%);
+        position: absolute;
+    
+	}
+}
+
+.p-menu-recommend__recommendation {
+    color: var.$white;
+
+    &::before {
+        content: "Recommendation";
+        font-size: 12px;
+        display: block;
+
+    }
+}

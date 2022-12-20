@@ -1,0 +1,37 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-contact {
+    background-image: url(../assets/img_vegi.svg) ;
+    background-size: cover;
+    background-position: center;
+    padding:64px 4.5%;
+
+    @include mixin.mq('tab') {
+        padding: 130px 22%;
+        
+    }
+}
+
+.p-contact__text {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.p-contact__inner {
+    padding: 60px 4.5%;
+    background: var.$gray-background;
+
+    @include mixin.mq('tab') {
+        padding: 64px 140px 72px;
+        
+    }
+}
+
+.p-contact__title {
+
+    &::before {
+        content: "お問い合わせ";
+
+    }
+}

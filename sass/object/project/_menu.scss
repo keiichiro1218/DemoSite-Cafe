@@ -1,0 +1,101 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-menu {
+    background-color: var.$black;
+    color: var.$black;
+    padding: 24px 0;
+
+    @include mixin.mq('tab') {
+		padding: 72px 0;
+	}
+}
+
+.p-menu__inner {
+    margin: 0 5%;
+    padding: 32px 5%;
+    border: solid var.$white 1px;
+
+    @include mixin.mq('tab') {
+        padding: 80px 0 100px 0;
+        
+	}
+}
+
+.p-menu__title {
+    color: var.$white;
+
+    &::after {
+        background: var.$white;
+
+    }
+}
+
+.p-menu__pfc {
+    text-align: center;
+    color: var.$white;
+}
+
+.p-menu__contents {
+    margin-top: 48px;
+}
+
+.p-menu__contents-img {
+    margin-bottom: -60px;
+    position: relative;
+    width: 100%;
+
+    @include mixin.mq('tab') {
+		width: 32%;
+	}
+
+}
+
+.p-menu__title {
+    font-weight: 700;
+
+    &::before {
+        content: "メニュー";
+        color: var.$white;
+    
+    }
+
+    &::after {
+        background: var.$white;
+
+    }
+}
+
+.p-menu__recommend {
+    margin-top: 24px;
+
+    @include mixin.mq('tab') {
+		// margin-bottom: 35px;
+	}
+}
+
+.p-menu__detail {
+    margin-top: 50px;
+
+}
+
+.p-menu__card-inner {
+    border: 1px solid var.$border-black;
+
+}
+
+.p-menu__price-mark {
+    font-size: 18px;
+
+    @include mixin.mq('tab') {
+		font-size: 24px;
+	}
+    
+}
+
+.p-menu__price-tax {
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+

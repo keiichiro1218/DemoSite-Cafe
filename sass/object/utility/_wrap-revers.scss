@@ -1,0 +1,6 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.u-fd-rowvers {
+    flex-direction: row-reverse;
+}

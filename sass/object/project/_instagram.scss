@@ -1,0 +1,154 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-instagram {
+    margin-top: 48px;
+
+    @include mixin.mq('tab') {
+		margin-top: 80px;
+        
+	}
+}
+
+.p-instagram__card {
+    
+    @include mixin.mq('tab') {
+        margin: 0 8%;
+		
+	}
+}
+
+
+.p-instagram__title {
+    padding: 10px 34px;
+    text-align: center;
+
+    @include mixin.mq('tab') {
+		padding: 18px 107px;
+	}
+    
+    p {
+        color: var.$white;
+
+        @include mixin.mq('tab') {
+            font-size: 30px;
+        }
+    }
+}
+
+.p-instagram__text {
+    margin: 24px 8%;
+    
+    p {
+        font-size: 16px;
+        text-align: start;
+        position: relative;
+        display: inline-block;
+
+        @include mixin.mq('tab') {
+            
+            &::before {
+                content:"";
+                display:inline-block;
+                width:1px;
+                height:36px;
+                background-color: var.$black;
+                position:absolute;
+                top:-2px;
+                left:-5px;
+                top: 50%;
+                transform: translateY(-50%) rotate(-35deg);
+            }
+    
+            &::after {
+                content:"";
+                display:inline-block;
+                width:1px;
+                height:36px;
+                background-color: var.$black;
+                position:absolute;
+                top: 50%;
+                transform: translateY(-50%) rotate(35deg);
+            }
+        }
+
+        @include mixin.mq('tab') {
+            text-align: center;
+        }
+
+    }
+}
+
+.p-instagram__img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 3.5%;
+
+    @include mixin.mq('tab') {
+		flex-wrap: nowrap;
+	}
+}
+
+.p-instagram__photo {
+    width: 47%;
+
+    &:nth-child( 2n + 2 ){
+        margin-left: 4%;
+
+    }
+
+    &:nth-child( n + 3 ){
+        margin-top: 10px;
+
+    }
+   
+    @include mixin.mq('tab') {
+        width: 25%;
+
+        &:nth-child( n + 2 ){
+            margin-left: 1.5%;
+    
+        }
+	}
+
+}
+
+.p-instagram__post {
+    width: 100%;
+    display: block;
+    
+    @include mixin.mq('tab') {
+        width : 100% ;
+    }
+
+    &:nth-child(2n){
+        margin-left: 4%;
+
+    }
+
+    &:nth-child(n + 3){
+        margin-top: 3.5%;
+
+    }
+
+}
+
+.p-instagram__url {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    color: var.$border-black;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.p-instagram__url-link {
+    color: var.$black;
+    
+}
+
+.p-instagram__btn {
+    margin: 24px 3.5%;
+    display: inline-block;
+
+}

@@ -1,0 +1,154 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-post-card {
+    position: relative;
+
+}
+
+.p-post-card__inner {
+    padding: 18px 10px;
+    background-color: var.$white;
+    margin: 0 16px;
+    padding-bottom: 113px;
+    box-shadow: 0 0 4px 4px rgb(161 159 159 / 60%);
+
+    @include mixin.mq('tab') {
+        margin: 0 10%;
+        padding: 32px;
+        
+    }
+
+}
+
+.p-post-card__img {
+    @include mixin.mq('tab') {
+        display: flex;
+        
+    }
+
+    img {
+      
+        display: block;
+        outline: 1px solid rgb(255, 255, 255);
+        outline-offset: -10px;
+    }
+
+}
+
+.p-post-card__img-terras {
+    width: 100%;
+    background-image: url(../assets/img_terras.svg);
+    background-position: 50% 45%;
+    padding-top: 107%;
+
+    @include mixin.mq('tab') {
+        width: 60%;
+        
+    }
+}
+
+.p-post-card__photo {
+    outline-offset: -10px;
+    outline: 1px solid rgb(255, 255, 255);
+    
+    @include mixin.mq('tab') {
+        background-size: cover;
+        padding-top: 38%;
+        
+    }
+
+}
+
+.p-post-card__img-take-out {
+    width: 40%;
+    background-image: url(../assets/img_take-out.svg);
+    background-position: center;
+
+}
+
+.p-post-card__stamp {
+    position: absolute;
+    top: -39px;
+}
+
+.p-post-card__text {
+    position: relative;
+
+    @include mixin.mq('tab') {
+        display: flex;
+        
+    }
+
+}
+
+.p-post-card__title {
+    font-family: "Satisfy";
+    font-size: 30px;
+    margin-top: 20px;
+
+    @include mixin.mq('tab') {
+        font-size: 40px;
+        margin-top: 27px;
+        width: 21%;
+        
+    }
+}
+
+.p-post-card__body {
+    position: relative;
+
+    @include mixin.mq('tab') {
+        width: 54%;
+        margin: 45px 0 12px 52px;
+        
+    }
+    
+    p {
+        font-size: 16px;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 16px;
+        line-height: 2;
+        background: repeating-linear-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,0) 31px, #ccc 31px, #ccc 32px);
+  
+    }
+}
+
+.p-post-card__message {
+    color: var.$green;
+    // position: relative;
+    position: absolute;
+    right: 0;
+    font-family: "Satisfy";
+    font-size: 36px;
+    transform:rotate(-6deg);
+    display: inline-block;
+    
+    @include mixin.mq('tab') {
+        bottom: 0;
+        font-size: 40px;
+        letter-spacing: 2px;
+        
+    }
+
+    &::before {
+        content: '';            	
+        width: calc(100% + 4px);    
+        height: calc(100% + 4px); 
+        border-bottom: 1px solid var.$green;    	/* 外側の線になる一本線の枠線をひく*/
+        position: absolute;        	/* 外側の線の位置を自由に動かせるようにする */
+        top: -15px;            		/* 外側の線の位置を、内側の線から上に3pxずらす */
+        left: -3px;            		/* 外側の線の位置を、内側の線から左に3pxずらす*/
+    }
+
+    &::after {
+        content: '';            	/* 擬似要素に実体を持たせる */
+        width: calc(100% + 4px);    /* 外側の線になる要素の幅を指定する*/
+        height: calc(100% + 4px);   /* 外側の線になる要素の高さを指定する */
+        border-bottom: 1px solid var.$green;    	/* 外側の線になる一本線の枠線をひく*/
+        position: absolute;        	/* 外側の線の位置を自由に動かせるようにする */
+        top: -10px;            		/* 外側の線の位置を、内側の線から上に3pxずらす */
+        left: -3px;            		/* 外側の線の位置を、内側の線から左に3pxずらす*/
+    }
+}

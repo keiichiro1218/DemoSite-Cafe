@@ -1,0 +1,40 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-menu-detail {
+
+    @include mixin.mq('tab') {
+		margin-top: 30px;
+	}
+}
+
+
+.c-menu-detail__kcal {
+    font-size: 14px;
+    margin-bottom: 32px;
+
+    @include mixin.mq('tab') {
+		margin-bottom: 40px;
+	}
+}
+
+.c-menu-detail__name {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 12px;
+    
+    @include mixin.mq('tab') {
+		font-size: 30px;
+        margin-bottom: 20px;
+	}
+}
+
+.c-menu-detail__price {
+    font-size: 30px;
+    margin-bottom: 16px;
+
+    @include mixin.mq('tab') {
+		font-size: 40px;
+        margin-bottom: 20px;
+	}
+}

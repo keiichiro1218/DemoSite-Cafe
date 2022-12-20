@@ -1,24 +1,20 @@
-$primary : #64629D;
-$font-color-black : #2D2D32;
-// $background-color : #2D2D32;
-$background-black : #2D2D32;
-// $background-color-gray : #F9F9F9;
-$background-gray : #F9F9F9;
-// $main-visual : #EDECFC;
-$background-blue : #EDECFC;
-$triangle-gray: #C4C4C4;
-// $background-color-footer : #000000;
-$background-footer : #000000;
-$white : #FFFFFF;
-$subtitlecolor : #9F9EC1;
+$black : #2F2F2F;
+$border-black:#333333;
+$white : #FFF;
+$green : #159741;
+$gray : #6767674D;
+$gray-background : #F2F2F2;
 
 $breakpoints: (
 	"sp": "screen and (max-width: 390px)",
-    "tab-split-only": "screen and (min-width:391px) and (max-width: 520px)",
-    "tab-split-max": "screen and (max-width: 520px)",
-    "tab-only": "screen and (min-width: 391px) and (max-width: 960px)",
-    "tab-middle": "screen and (min-width: 521px) and (max-width: 960px)",
-    "tab": "screen and (max-width: 960px)",
-    "pc": "screen and (min-width: 961px)"
+    "tab": "screen and (min-width: 390px)"
+
+
+    // "tab-split-only": "screen and (min-width:391px) and (max-width: 520px)",
+    // "tab-split-max": "screen and (max-width: 520px)",
+    // "tab-only": "screen and (min-width: 391px) and (max-width: 960px)",
+    // "tab-middle": "screen and (min-width: 521px) and (max-width: 960px)",
+    // "tab": "screen and (max-width: 960px)",
+    // "pc": "screen and (min-width: 961px)"
 
 );

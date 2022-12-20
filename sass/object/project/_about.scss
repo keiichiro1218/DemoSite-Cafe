@@ -2,60 +2,179 @@
 @use "./global/mixin" as mixin;
 
 .p-about {
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 64px 0;
+    background-color: var.$gray-background;
 
-    @include mixin.mq('tab-split-max') {
-		padding-top: 80px;
-        padding-bottom: 60px;
+    @include mixin.mq('tab') {
+		padding: 130px 0;
 	}
 
+   
+}
+
+.p-about__inner {
+    margin: 0 7%;
+
+    @include mixin.mq('tab') {
+		margin: 0 12.5%;
+	}
 }
 
 .p-about__title {
-    margin-bottom: 30px;
-    font-size: 48px;
-    letter-spacing: 5%;
-    text-align: center;
-
-    br {
-        display: none;
-
-        @include mixin.mq('tab-split-max') {
-            display: block;
-            }
-        }
-
-        @include mixin.mq('tab') {
-            font-size: 30px;
-        }
+    font-weight: 700;
 
     &::before {
-        content: "What is Ravek?";
-        color: var.$subtitlecolor;
-        font-weight: 700;
-        font-size: 36px;
-        text-align: center;
-        display: block;
-
-        @include mixin.mq('tab') {
-            font-size: 22px;
-            margin-bottom: 12px;
-        }
-    
+        content: "Garden Saladのこだわり";
     }
 }
+
 
 .p-about__text {
-    margin-bottom: 30px;
+    position: relative;
+    z-index: 0;
+
+    @include mixin.mq('tab') {
+        width: 58%;
+	}
+
+    &::before {
+        font-size: 180px;
+        color: #FFFFFF;
+        opacity: 80%;
+        position: absolute;
+        right: -20px;
+        bottom: -32px;
+        line-height: 80%;
+        font-family: reross-quadratic, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        z-index: -1;
+        
+
+        @include mixin.mq('tab') {
+            font-size: 288px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            bottom: auto;
+            transform:  translateY(-50%);
+            line-height: 100%;
+            
+
+        }
+        
+    }
+}
+
+.p-about__text01 {
+    margin-bottom: 32px;
+    padding-left: 6%;
+
+    @include mixin.mq('tab') {
+		margin-bottom: 0;
+	}
+
+    &::before {
+        content: "01";
+        
+    }
+}
+
+.p-about__text02 {
+    margin-bottom: 32px;
+    margin-right: 6%;
+
+    @include mixin.mq('tab') {
+		margin-bottom: 0;
+	}
+
+    &::before {
+        content: "02";
+        margin-bottom: 0;
+      
+    }
+}
+
+.p-about__text03 {
+    margin-bottom: 48px;
+    padding-left: 6%;
+
+    @include mixin.mq('tab') {
+		margin-bottom: 0;
+	}
+
+    &::before {
+        content: "03";
+        bottom: -50px;
+
+        @include mixin.mq('tab') {
+            bottom: auto;
+        }
+        
+    }
+}
+
+.p-about__text-wrap {
+
+    @include mixin.mq('tab') {
+        position: absolute;
+        top: 50%;
+        // left: 50%;
+        transform: translateY(-50%);
+        width: 63%;
+        letter-spacing: 0.05em;
+		
+	}
+   
+}
+
+.p-about__text-title {
+    font-size: 23px;
+    margin-bottom: 16px;
+    font-weight: 700;
+
+    @include mixin.mq('tab') {
+		font-size: 30px;
+	}
 
     span {
-        font-weight: 700;
+        color: var.$green;
     }
-    
 }
 
-.p-about__btn {
-    margin-top: 40px;
+.p-about__text-detail {
+    font-size: 16px;
+    // margin-bottom: 32px;
+
+    @include mixin.mq('tab') {
+		font-size: 18px;
+       
+	}
 }
+
+.p-about__img {
+    width: 100%;
+    display: block;
+
+    @include mixin.mq('tab') {
+		width: 42%;
+	}
+
+
+    img {
+        width: 100%;
+        display: block;
+
+    }
+}
+
+.p-about__content {
+    margin-top: 56px;
+
+    @include mixin.mq('tab') {
+		display: flex;
+        margin-top: 64px;
+        
+	}
+}
+
