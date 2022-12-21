@@ -903,6 +903,7 @@ li {
   border: solid 1px #2F2F2F;
   width: 100%;
   line-height: 23px;
+  background-color: #FFF;
 }
 
 .p-form__label {
@@ -922,6 +923,7 @@ li {
 
 .p-form__comment textarea {
   border: solid 1px #2F2F2F;
+  background-color: #FFF;
   width: 100%;
   padding: 13px;
   height: 160px;

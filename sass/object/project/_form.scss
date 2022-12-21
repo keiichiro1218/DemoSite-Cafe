@@ -12,6 +12,7 @@
     border: solid 1px var.$black;
     width: 100%;
     line-height: 23px;
+    background-color: var.$white;
 }
 
 .p-form__label {
@@ -35,6 +36,7 @@
 
     textarea {
         border: solid 1px var.$black;
+        background-color: var.$white;
         width: 100%;
         padding: 13px;
         height: 160px;
