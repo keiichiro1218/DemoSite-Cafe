@@ -365,7 +365,6 @@ li {
 
 .c-btn-form {
   display: inline-block;
-  margin: 0 10px;
   width: 100%;
 }
 .c-btn-form input {
@@ -1471,6 +1470,7 @@ li {
 .p-post-card__stamp {
   position: absolute;
   top: -39px;
+  width: 30%;
 }
 
 .p-post-card__text {
