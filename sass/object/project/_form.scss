@@ -23,15 +23,6 @@
         font-size: 18px;
         
     }
-
-    &::after {
-        content: "必須";
-        color: var.$white;
-        background-color: var.$green;
-        border-radius: 6px;
-        font-size: 12px;
-        padding: 3px 8px;
-    }
 }
 
 

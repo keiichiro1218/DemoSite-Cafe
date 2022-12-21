@@ -425,6 +425,16 @@ li {
   }
 }
 
+.c-label::after {
+  content: "必須";
+  color: #FFF;
+  background-color: #159741;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 3px 8px;
+  margin-left: 10px;
+}
+
 @media screen and (min-width: 390px) {
   .c-menu-detail {
     margin-top: 30px;
@@ -904,14 +914,6 @@ li {
   .p-form__label {
     font-size: 18px;
   }
-}
-.p-form__label::after {
-  content: "必須";
-  color: #FFF;
-  background-color: #159741;
-  border-radius: 6px;
-  font-size: 12px;
-  padding: 3px 8px;
 }
 
 .p-form__margin-bottom {
