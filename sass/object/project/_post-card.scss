@@ -40,7 +40,8 @@
     width: 100%;
     background-image: url(../assets/img_terras.svg);
     background-position: 50% 45%;
-    padding-top: 107%;
+    padding-top: 88%;
+    background-size: cover;
 
     @include mixin.mq('tab') {
         width: 60%;
@@ -57,14 +58,19 @@
         padding-top: 38%;
         
     }
-
 }
 
 .p-post-card__img-take-out {
-    width: 40%;
+    width: 100%;
     background-image: url(../assets/img_take-out.svg);
     background-position: center;
+    background-size: cover;
+    padding-top: 63%;
 
+    @include mixin.mq('tab') {
+        width: 40%;
+        
+    }
 }
 
 .p-post-card__stamp {

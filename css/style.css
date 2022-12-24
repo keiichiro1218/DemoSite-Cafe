@@ -612,7 +612,12 @@ li {
 
 .p-about__text01 {
   margin-bottom: 32px;
-  padding-left: 6%;
+  padding-left: 0;
+}
+@media screen and (min-width: 601px) {
+  .p-about__text01 {
+    padding-left: 6%;
+  }
 }
 @media screen and (min-width: 960px) {
   .p-about__text01 {
@@ -1193,7 +1198,12 @@ li {
 .p-main__concept-note br {
   display: none;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 601px) and (max-width: 1150px) {
+  .p-main__concept-note br {
+    display: block;
+  }
+}
+@media screen and (min-width: 1151px) {
   .p-main__concept-note br {
     display: block;
   }
@@ -1448,7 +1458,8 @@ li {
   width: 100%;
   background-image: url(../assets/img_terras.svg);
   background-position: 50% 45%;
-  padding-top: 107%;
+  padding-top: 88%;
+  background-size: cover;
 }
 @media screen and (min-width: 960px) {
   .p-post-card__img-terras {
@@ -1468,9 +1479,16 @@ li {
 }
 
 .p-post-card__img-take-out {
-  width: 40%;
+  width: 100%;
   background-image: url(../assets/img_take-out.svg);
   background-position: center;
+  background-size: cover;
+  padding-top: 63%;
+}
+@media screen and (min-width: 960px) {
+  .p-post-card__img-take-out {
+    width: 40%;
+  }
 }
 
 .p-post-card__stamp {
@@ -1556,7 +1574,7 @@ li {
 }
 
 .p-shop {
-  padding: 64px 0 0;
+  padding: 64px 0 64px;
   background-color: #F2F2F2;
 }
 @media screen and (min-width: 960px) {

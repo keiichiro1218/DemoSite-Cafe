@@ -8,13 +8,13 @@ $gray-background : #F2F2F2;
 $breakpoints: (
 	"sp": "screen and (max-width: 390px)",
     "tab": "screen and (min-width: 960px)",
+    "tab-middle": "screen and (min-width: 601px)",
     "tab-mini": "screen and (min-width: 601px) and (max-width: 1150px)",
     "pc": "screen and (min-width: 1151px)"
 
 
 
     // "tab-split-max": "screen and (max-width: 520px)",
-    // "tab-middle": "screen and (min-width: 521px) and (max-width: 960px)",
     // "pc": "screen and (min-width: 961px)"
 
 );
