@@ -7,7 +7,7 @@
     background-position: center;
     padding:64px 4.5%;
 
-    @include mixin.mq('tab') {
+    @include mixin.mq('tab-middle') {
         padding: 130px 22%;
         
     }

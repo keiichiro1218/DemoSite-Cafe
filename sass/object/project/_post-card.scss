@@ -9,16 +9,15 @@
 .p-post-card__inner {
     padding: 18px 10px;
     background-color: var.$white;
-    margin: 0 16px;
+    margin: 0 4%;
     padding-bottom: 113px;
     box-shadow: 0 0 4px 4px rgb(161 159 159 / 60%);
 
-    @include mixin.mq('tab') {
+    @include mixin.mq('tab-middle') {
         margin: 0 10%;
         padding: 32px;
         
     }
-
 }
 
 .p-post-card__img {
@@ -33,7 +32,6 @@
         outline: 1px solid rgb(255, 255, 255);
         outline-offset: -10px;
     }
-
 }
 
 .p-post-card__img-terras {

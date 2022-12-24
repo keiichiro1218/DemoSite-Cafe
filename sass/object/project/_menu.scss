@@ -18,7 +18,7 @@
 
     @include mixin.mq('tab') {
         padding: 80px 0 100px 0;
-        
+
 	}
 }
 
@@ -68,10 +68,7 @@
 
 .p-menu__recommend {
     margin-top: 24px;
-
-    @include mixin.mq('tab') {
-		// margin-bottom: 35px;
-	}
+    
 }
 
 .p-menu__detail {
