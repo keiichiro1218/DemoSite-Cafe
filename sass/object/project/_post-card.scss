@@ -43,6 +43,7 @@
 
     @include mixin.mq('tab') {
         width: 60%;
+        padding-top: 0;
         
     }
 }
@@ -67,6 +68,7 @@
 
     @include mixin.mq('tab') {
         width: 40%;
+        padding-top: 0;
         
     }
 }

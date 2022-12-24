@@ -832,7 +832,7 @@ li {
   background-position: center;
   padding: 64px 4.5%;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 601px) {
   .p-contact {
     padding: 130px 22%;
   }
@@ -1350,6 +1350,11 @@ li {
     padding: 72px 0;
   }
 }
+@media screen and (min-width: 601px) {
+  .p-menu {
+    padding: 64px;
+  }
+}
 
 .p-menu__inner {
   margin: 0 5%;
@@ -1465,6 +1470,7 @@ li {
 @media screen and (min-width: 960px) {
   .p-post-card__img-terras {
     width: 60%;
+    padding-top: 0;
   }
 }
 
@@ -1489,6 +1495,7 @@ li {
 @media screen and (min-width: 960px) {
   .p-post-card__img-take-out {
     width: 40%;
+    padding-top: 0;
   }
 }
 
