@@ -31,7 +31,7 @@
         color: var.$white;
 
         @include mixin.mq('tab') {
-            font-size: 30px;
+            font-size: 1.87rem;
         }
     }
 }
@@ -40,7 +40,7 @@
     margin: 24px 8%;
     
     p {
-        font-size: 16px;
+        font-size: 1rem;
         text-align: start;
         position: relative;
         display: inline-block;

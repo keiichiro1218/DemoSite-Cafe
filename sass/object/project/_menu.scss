@@ -88,7 +88,7 @@
 }
 
 .p-menu__price-mark {
-    font-size: 18px;
+    font-size: 1.12rem;
 
     @include mixin.mq('tab') {
 		font-size: 24px;
@@ -97,7 +97,7 @@
 }
 
 .p-menu__price-tax {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     
 }

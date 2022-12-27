@@ -44,12 +44,12 @@
 }
 
 .p-main__title-text {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
     line-height: 43px;
 
     @include mixin.mq('tab-mini') {
-		font-size: 64px;
+		font-size: 4rem;
         line-height: 64px;
 	}
 
@@ -60,11 +60,11 @@
 }
 
 .p-main__explanation {
-    font-size: 14px;
+    font-size: 0.87rem;
     color: var.$white;
 
     @include mixin.mq('tab') {
-		font-size: 32px;
+		font-size: 2rem;
 	}
 }
 
@@ -83,12 +83,12 @@
 }
 
 .p-main__concept-text {
-    font-size: 20px;
+    font-size: 1.22rem;
     font-weight: 700;
     margin-bottom: 24px;
 
     @include mixin.mq('tab') {
-		font-size: 30px;
+		font-size: 1.87rem;
 	}
 
     br {
@@ -102,7 +102,7 @@
 
 .p-main__concept-note {
     z-index: 100;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     margin: 0 9%;
     margin-bottom: 24px;
@@ -124,7 +124,7 @@
 .p-main__background-text {
     position: absolute;
     color: var.$gray;
-    font-size: 110px;
+    font-size: 6.87rem;
     text-align: right;
     bottom: 0;
     right: -2%;
@@ -135,7 +135,7 @@
 
     @include mixin.mq('tab') {
 		display: flex;
-        font-size: 280px;
+        font-size: 17.5rem;
         text-align: start;
         left: -3%;
 	}

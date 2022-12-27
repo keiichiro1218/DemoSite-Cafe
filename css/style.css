@@ -12,6 +12,7 @@ html {
   overflow-y: scroll; /* All browsers without overlaying scrollbars */
   -webkit-text-size-adjust: 100%; /* iOS 8+ */
   font-family: "Noto Sans JP";
+  font-size: 16px;
 }
 
 *,
@@ -373,12 +374,12 @@ li {
   color: #FFF;
   width: 100%;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.12rem;
   text-align: center;
 }
 
 .c-btn-instagram {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   border: solid 1px #333333;
   padding: 16px 40px 16px 37px;
@@ -429,7 +430,7 @@ li {
   color: #FFF;
   background-color: #159741;
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 0.73rem;
   padding: 3px 8px;
   margin-left: 10px;
 }
@@ -441,7 +442,7 @@ li {
 }
 
 .c-menu-detail__kcal {
-  font-size: 14px;
+  font-size: 0.87rem;
   margin-bottom: 32px;
 }
 @media screen and (min-width: 960px) {
@@ -452,7 +453,7 @@ li {
 
 .c-menu-detail__name {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.47rem;
   margin-bottom: 12px;
 }
 @media screen and (min-width: 960px) {
@@ -463,7 +464,7 @@ li {
 }
 
 .c-menu-detail__price {
-  font-size: 30px;
+  font-size: 1.87rem;
   margin-bottom: 16px;
 }
 @media screen and (min-width: 960px) {
@@ -484,25 +485,17 @@ li {
 
 .c-menu-global__list a {
   padding: 22px 10px;
-  font-size: 14px;
+  font-size: 0.87rem;
   display: block;
 }
 @media screen and (min-width: 960px) {
   .c-menu-global__list a {
-    font-size: 18px;
+    font-size: 1.12rem;
   }
 }
 
-.c-menu-item__footer {
-  color: #2F2F2F;
-}
-
-.c-menu-item__header {
-  color: #FFF;
-}
-
 .c-section-title {
-  font-size: 32px;
+  font-size: 2rem;
   text-align: center;
   position: relative;
   margin-bottom: 68px;
@@ -511,19 +504,19 @@ li {
 }
 @media screen and (min-width: 960px) {
   .c-section-title {
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 96px;
   }
 }
 .c-section-title::before {
   color: #159741;
-  font-size: 14px;
+  font-size: 0.87rem;
   display: block;
   font-family: "Noto Sans JP";
 }
 @media screen and (min-width: 960px) {
   .c-section-title::before {
-    font-size: 18px;
+    font-size: 1.12rem;
   }
 }
 .c-section-title::after {
@@ -586,8 +579,8 @@ li {
   }
 }
 .p-about__text::before {
-  font-size: 180px;
-  color: #FFFFFF;
+  font-size: 11.25rem;
+  color: #FFF;
   opacity: 80%;
   position: absolute;
   right: -20px;
@@ -600,7 +593,7 @@ li {
 }
 @media screen and (min-width: 960px) {
   .p-about__text::before {
-    font-size: 288px;
+    font-size: 18rem;
     position: absolute;
     top: 50%;
     right: 0;
@@ -672,13 +665,13 @@ li {
 }
 
 .p-about__text-title {
-  font-size: 23px;
+  font-size: 1.43rem;
   margin-bottom: 16px;
   font-weight: 700;
 }
 @media screen and (min-width: 960px) {
   .p-about__text-title {
-    font-size: 30px;
+    font-size: 1.87rem;
   }
 }
 .p-about__text-title span {
@@ -686,11 +679,11 @@ li {
 }
 
 .p-about__text-detail {
-  font-size: 16px;
+  font-size: 1rem;
 }
 @media screen and (min-width: 960px) {
   .p-about__text-detail {
-    font-size: 18px;
+    font-size: 1.12rem;
   }
 }
 
@@ -743,13 +736,10 @@ li {
 }
 
 .p-address__name {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   color: #333333;
   text-align: center;
-  font-family: reross-quadratic, sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 @media screen and (min-width: 960px) {
   .p-address__name {
@@ -763,7 +753,7 @@ li {
 }
 .p-address__name::after {
   content: "（ ガーデンサラダ  ）";
-  font-size: 16px;
+  font-size: 1rem;
   display: block;
 }
 @media screen and (min-width: 960px) {
@@ -839,7 +829,7 @@ li {
 }
 
 .p-contact__text {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 23px;
 }
 
@@ -858,7 +848,7 @@ li {
 }
 
 .p-copyright {
-  font-size: 12px;
+  font-size: 0.73rem;
   text-align: center;
 }
 
@@ -897,7 +887,7 @@ li {
 }
 .p-footer__sns-logo i {
   display: inline-block;
-  font-size: 2em;
+  font-size: 2rem;
   color: #FFF;
 }
 
@@ -947,7 +937,7 @@ li {
 
 .p-form__checkbox-label {
   display: block;
-  font-size: 16px;
+  font-size: 1rem;
   justify-content: center;
 }
 
@@ -980,7 +970,7 @@ li {
 }
 @media screen and (min-width: 960px) {
   .p-instagram__title p {
-    font-size: 30px;
+    font-size: 1.87rem;
   }
 }
 
@@ -988,7 +978,7 @@ li {
   margin: 24px 8%;
 }
 .p-instagram__text p {
-  font-size: 16px;
+  font-size: 1rem;
   text-align: start;
   position: relative;
   display: inline-block;
@@ -1130,13 +1120,13 @@ li {
 }
 
 .p-main__title-text {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
   line-height: 43px;
 }
 @media screen and (min-width: 601px) and (max-width: 1150px) {
   .p-main__title-text {
-    font-size: 64px;
+    font-size: 4rem;
     line-height: 64px;
   }
 }
@@ -1148,12 +1138,12 @@ li {
 }
 
 .p-main__explanation {
-  font-size: 14px;
+  font-size: 0.87rem;
   color: #FFF;
 }
 @media screen and (min-width: 960px) {
   .p-main__explanation {
-    font-size: 32px;
+    font-size: 2rem;
   }
 }
 
@@ -1172,13 +1162,13 @@ li {
 }
 
 .p-main__concept-text {
-  font-size: 20px;
+  font-size: 1.22rem;
   font-weight: 700;
   margin-bottom: 24px;
 }
 @media screen and (min-width: 960px) {
   .p-main__concept-text {
-    font-size: 30px;
+    font-size: 1.87rem;
   }
 }
 @media screen and (min-width: 960px) {
@@ -1189,7 +1179,7 @@ li {
 
 .p-main__concept-note {
   z-index: 100;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   margin: 0 9%;
   margin-bottom: 24px;
@@ -1212,7 +1202,7 @@ li {
 .p-main__background-text {
   position: absolute;
   color: rgba(103, 103, 103, 0.3019607843);
-  font-size: 110px;
+  font-size: 6.87rem;
   text-align: right;
   bottom: 0;
   right: -2%;
@@ -1224,7 +1214,7 @@ li {
 @media screen and (min-width: 960px) {
   .p-main__background-text {
     display: flex;
-    font-size: 280px;
+    font-size: 17.5rem;
     text-align: start;
     left: -3%;
   }
@@ -1288,7 +1278,7 @@ li {
 }
 .p-menu-recommend__recommendation::before {
   content: "Recommendation";
-  font-size: 12px;
+  font-size: 0.73rem;
   display: block;
 }
 
@@ -1418,7 +1408,7 @@ li {
 }
 
 .p-menu__price-mark {
-  font-size: 18px;
+  font-size: 1.12rem;
 }
 @media screen and (min-width: 960px) {
   .p-menu__price-mark {
@@ -1427,7 +1417,7 @@ li {
 }
 
 .p-menu__price-tax {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -1522,12 +1512,12 @@ li {
 
 .p-post-card__title {
   font-family: "Satisfy";
-  font-size: 30px;
+  font-size: 1.87rem;
   margin-top: 20px;
 }
 @media screen and (min-width: 960px) {
   .p-post-card__title {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-top: 27px;
     width: 21%;
   }
@@ -1543,7 +1533,7 @@ li {
   }
 }
 .p-post-card__body p {
-  font-size: 16px;
+  font-size: 1rem;
   padding-top: 0;
   padding-bottom: 0;
   font-size: 16px;
@@ -1556,14 +1546,14 @@ li {
   position: absolute;
   right: 0;
   font-family: "Satisfy";
-  font-size: 36px;
+  font-size: 2.25rem;
   transform: rotate(-6deg);
   display: inline-block;
 }
 @media screen and (min-width: 960px) {
   .p-post-card__message {
     bottom: 0;
-    font-size: 40px;
+    font-size: 2.5rem;
     letter-spacing: 2px;
   }
 }
@@ -1571,19 +1561,19 @@ li {
   content: "";
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  border-bottom: 1px solid #159741; /* 外側の線になる一本線の枠線をひく*/
-  position: absolute; /* 外側の線の位置を自由に動かせるようにする */
-  top: -15px; /* 外側の線の位置を、内側の線から上に3pxずらす */
-  left: -3px; /* 外側の線の位置を、内側の線から左に3pxずらす*/
+  border-bottom: 1px solid #159741;
+  position: absolute;
+  top: -15px;
+  left: -3px;
 }
 .p-post-card__message::after {
-  content: ""; /* 擬似要素に実体を持たせる */
-  width: calc(100% + 4px); /* 外側の線になる要素の幅を指定する*/
-  height: calc(100% + 4px); /* 外側の線になる要素の高さを指定する */
-  border-bottom: 1px solid #159741; /* 外側の線になる一本線の枠線をひく*/
-  position: absolute; /* 外側の線の位置を自由に動かせるようにする */
-  top: -10px; /* 外側の線の位置を、内側の線から上に3pxずらす */
-  left: -3px; /* 外側の線の位置を、内側の線から左に3pxずらす*/
+  content: "";
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-bottom: 1px solid #159741;
+  position: absolute;
+  top: -10px;
+  left: -3px;
 }
 
 .p-shop {

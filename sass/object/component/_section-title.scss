@@ -2,7 +2,7 @@
 @use "./global/mixin" as mixin;
 
 .c-section-title {
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     position: relative;
     margin-bottom: 68px;
@@ -10,18 +10,18 @@
     font-style: normal;
 
     @include mixin.mq('tab') {
-		font-size: 48px;
+		font-size: 3rem;
         margin-bottom: 96px;
 	}
 
     &::before {
         color: var.$green;
-        font-size: 14px;
+        font-size: 0.87rem;
         display: block;
         font-family: "Noto Sans JP";
 
         @include mixin.mq('tab') {
-            font-size: 18px;
+            font-size: 1.12rem;
         }
     }
 

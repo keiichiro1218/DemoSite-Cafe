@@ -36,8 +36,8 @@
 	}
 
     &::before {
-        font-size: 180px;
-        color: #FFFFFF;
+        font-size: 11.25rem;
+        color: var.$white;
         opacity: 80%;
         position: absolute;
         right: -20px;
@@ -50,7 +50,7 @@
         
 
         @include mixin.mq('tab') {
-            font-size: 288px;
+            font-size: 18rem;
             position: absolute;
             top: 50%;
             right: 0;
@@ -130,12 +130,12 @@
 }
 
 .p-about__text-title {
-    font-size: 23px;
+    font-size: 1.43rem;
     margin-bottom: 16px;
     font-weight: 700;
 
     @include mixin.mq('tab') {
-		font-size: 30px;
+		font-size: 1.87rem;
 	}
 
     span {
@@ -144,10 +144,10 @@
 }
 
 .p-about__text-detail {
-    font-size: 16px;
+    font-size: 1rem;
 
     @include mixin.mq('tab') {
-		font-size: 18px;
+		font-size: 1.12rem;
        
 	}
 }

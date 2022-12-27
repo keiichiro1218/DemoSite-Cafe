@@ -10,7 +10,7 @@
 
 
 .c-menu-detail__kcal {
-    font-size: 14px;
+    font-size: 0.87rem;
     margin-bottom: 32px;
 
     @include mixin.mq('tab') {
@@ -20,7 +20,7 @@
 
 .c-menu-detail__name {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.47rem;
     margin-bottom: 12px;
     
     @include mixin.mq('tab') {
@@ -30,7 +30,7 @@
 }
 
 .c-menu-detail__price {
-    font-size: 30px;
+    font-size: 1.87rem;
     margin-bottom: 16px;
 
     @include mixin.mq('tab') {

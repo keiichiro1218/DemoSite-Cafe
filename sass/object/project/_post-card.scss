@@ -27,10 +27,10 @@
     }
 
     img {
-      
         display: block;
         outline: 1px solid rgb(255, 255, 255);
         outline-offset: -10px;
+
     }
 }
 
@@ -97,11 +97,11 @@
 
 .p-post-card__title {
     font-family: "Satisfy";
-    font-size: 30px;
+    font-size: 1.87rem;
     margin-top: 20px;
 
     @include mixin.mq('tab') {
-        font-size: 40px;
+        font-size: 2.5rem;
         margin-top: 27px;
         width: 21%;
         
@@ -118,7 +118,7 @@
     }
     
     p {
-        font-size: 16px;
+        font-size: 1rem;
         padding-top: 0;
         padding-bottom: 0;
         font-size: 16px;
@@ -133,13 +133,13 @@
     position: absolute;
     right: 0;
     font-family: "Satisfy";
-    font-size: 36px;
+    font-size: 2.25rem;
     transform:rotate(-6deg);
     display: inline-block;
     
     @include mixin.mq('tab') {
         bottom: 0;
-        font-size: 40px;
+        font-size: 2.5rem;
         letter-spacing: 2px;
         
     }
@@ -148,19 +148,19 @@
         content: '';            	
         width: calc(100% + 4px);    
         height: calc(100% + 4px); 
-        border-bottom: 1px solid var.$green;    	/* 外側の線になる一本線の枠線をひく*/
-        position: absolute;        	/* 外側の線の位置を自由に動かせるようにする */
-        top: -15px;            		/* 外側の線の位置を、内側の線から上に3pxずらす */
-        left: -3px;            		/* 外側の線の位置を、内側の線から左に3pxずらす*/
+        border-bottom: 1px solid var.$green;
+        position: absolute;        
+        top: -15px;            		
+        left: -3px;            		
     }
 
     &::after {
-        content: '';            	/* 擬似要素に実体を持たせる */
-        width: calc(100% + 4px);    /* 外側の線になる要素の幅を指定する*/
-        height: calc(100% + 4px);   /* 外側の線になる要素の高さを指定する */
-        border-bottom: 1px solid var.$green;    	/* 外側の線になる一本線の枠線をひく*/
-        position: absolute;        	/* 外側の線の位置を自由に動かせるようにする */
-        top: -10px;            		/* 外側の線の位置を、内側の線から上に3pxずらす */
-        left: -3px;            		/* 外側の線の位置を、内側の線から左に3pxずらす*/
+        content: '';            	
+        width: calc(100% + 4px);    
+        height: calc(100% + 4px);   
+        border-bottom: 1px solid var.$green;    	
+        position: absolute;        	
+        top: -10px;            		
+        left: -3px;
     }
 }
