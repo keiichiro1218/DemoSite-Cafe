@@ -1282,10 +1282,12 @@ li {
   display: block;
 }
 
+.p-menu-reg {
+  display: block;
+}
 @media screen and (min-width: 960px) {
   .p-menu-reg {
     display: flex;
-    margin-top: 443px;
     margin-left: 8.5%;
     margin-right: 8.5%;
   }
@@ -1293,10 +1295,15 @@ li {
     margin-left: 2%;
   }
 }
+@media screen and (min-width: 601px) and (max-width: 1150px) {
+  .p-menu-reg {
+    margin-top: 58px;
+  }
+}
 
 .p-menu-reg__card {
-  position: relative;
   margin-bottom: 48px;
+  text-align: center;
 }
 @media screen and (min-width: 960px) {
   .p-menu-reg__card {
@@ -1310,14 +1317,20 @@ li {
 .p-menu-reg__img {
   width: 100%;
   margin-bottom: -56px;
+  margin-left: 2%;
 }
+
 @media screen and (min-width: 960px) {
-  .p-menu-reg__img {
-    position: absolute;
-    width: 81%;
-    top: -110%;
-    left: 50%;
-    transform: translateX(-50%);
+  .p-menu-reg__img--avocado {
+    width: 88%;
+    margin-bottom: -76px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .p-menu-reg__img--chicken {
+    width: 90%;
+    margin-bottom: -74px;
   }
 }
 

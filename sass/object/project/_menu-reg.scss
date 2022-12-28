@@ -2,10 +2,11 @@
 @use "./global/mixin" as mixin;
 
 .p-menu-reg {
+    display: block;
 
     @include mixin.mq('tab') {
         display: flex;
-        margin-top: 443px;
+        // margin-top: 443px;
         margin-left: 8.5%;
         margin-right: 8.5%;
 
@@ -14,11 +15,17 @@
         }
 		
 	}
+
+    @include mixin.mq('tab-mini') {
+        margin-top: 58px;
+		
+	}
 }
 
 .p-menu-reg__card {
-    position: relative;
+    // position: relative;
     margin-bottom: 48px;
+    text-align: center;
 
     @include mixin.mq('tab') {
 		width: 49%;
@@ -30,22 +37,30 @@
 }
 
 .p-menu-reg__img {
-    // position: absolute;
-    // width: 81%;
-    // top: -110%;
-    // left: 50%;
-    // transform:  translateX(-50%);
     width: 100%;
     margin-bottom: -56px;
+    margin-left: 2%;
+
+}
+
+.p-menu-reg__img--avocado {
 
     @include mixin.mq('tab') {
-        position: absolute;
-        width: 81%;
-        top: -110%;
-        left: 50%;
-        transform:  translateX(-50%);
+        width: 88%;
+        margin-bottom: -76px;
 		
 	}
+
+}
+
+.p-menu-reg__img--chicken {
+
+    @include mixin.mq('tab') {
+        width: 90%;
+        margin-bottom: -74px;
+		
+	}
+
 }
 
 .p-menu-reg__detail {
