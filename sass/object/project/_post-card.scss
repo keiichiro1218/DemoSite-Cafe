@@ -16,6 +16,7 @@
     @include mixin.mq('tab-middle') {
         margin: 0 10%;
         padding: 32px;
+        padding-bottom: 113px;
         
     }
 }
@@ -36,7 +37,7 @@
 
 .p-post-card__img-terras {
     width: 100%;
-    background-image: url(../assets/img_terras.svg);
+    background-image: url(../assets/img_terras.png);
     background-position: 50% 45%;
     padding-top: 88%;
     background-size: cover;
@@ -61,7 +62,7 @@
 
 .p-post-card__img-take-out {
     width: 100%;
-    background-image: url(../assets/img_take-out.svg);
+    background-image: url(../assets/img_take-out.png);
     background-position: center;
     background-size: cover;
     padding-top: 63%;
@@ -138,7 +139,7 @@
     display: inline-block;
     
     @include mixin.mq('tab') {
-        bottom: 0;
+        bottom: -50px;
         font-size: 2.5rem;
         letter-spacing: 2px;
         

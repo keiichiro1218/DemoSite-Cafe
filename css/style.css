@@ -805,7 +805,7 @@ li {
 }
 
 .p-address__img {
-  background-image: url(../assets/img_store-exterior.svg);
+  background-image: url(../assets/img_store-exterior.png);
 }
 @media screen and (min-width: 960px) {
   .p-address__img {
@@ -817,7 +817,7 @@ li {
 }
 
 .p-contact {
-  background-image: url(../assets/img_vegi.svg);
+  background-image: url(../assets/img_vegi.jpg);
   background-size: cover;
   background-position: center;
   padding: 64px 4.5%;
@@ -1038,6 +1038,7 @@ li {
     width: 25%;
   }
   .p-instagram__photo:nth-child(n+2) {
+    margin-top: 0px;
     margin-left: 1.5%;
   }
 }
@@ -1449,6 +1450,7 @@ li {
   .p-post-card__inner {
     margin: 0 10%;
     padding: 32px;
+    padding-bottom: 113px;
   }
 }
 
@@ -1465,7 +1467,7 @@ li {
 
 .p-post-card__img-terras {
   width: 100%;
-  background-image: url(../assets/img_terras.svg);
+  background-image: url(../assets/img_terras.png);
   background-position: 50% 45%;
   padding-top: 88%;
   background-size: cover;
@@ -1490,7 +1492,7 @@ li {
 
 .p-post-card__img-take-out {
   width: 100%;
-  background-image: url(../assets/img_take-out.svg);
+  background-image: url(../assets/img_take-out.png);
   background-position: center;
   background-size: cover;
   padding-top: 63%;
@@ -1565,7 +1567,7 @@ li {
 }
 @media screen and (min-width: 960px) {
   .p-post-card__message {
-    bottom: 0;
+    bottom: -50px;
     font-size: 2.5rem;
     letter-spacing: 2px;
   }
@@ -1640,11 +1642,11 @@ li {
 }
 
 .u-img-salad {
-  background-image: url(../assets/img-sarada.svg);
+  background-image: url(../assets/img_sarad.jpg);
 }
 
 .u-img-store {
-  background-image: url(../assets/img-store.svg);
+  background-image: url(../assets/img_store.png);
 }
 
 .u-fd-rowvers {
