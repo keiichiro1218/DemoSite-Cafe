@@ -11,7 +11,7 @@ html {
   box-sizing: border-box;
   overflow-y: scroll; /* All browsers without overlaying scrollbars */
   -webkit-text-size-adjust: 100%; /* iOS 8+ */
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
 }
 
@@ -346,10 +346,6 @@ li {
   }
 }
 
-.p-header__logo {
-  margin: 10px 0;
-}
-
 .l-header__inner {
   display: flex;
   width: 94%;
@@ -362,6 +358,10 @@ li {
     margin-left: 2.5%;
     margin-right: 5%;
   }
+}
+
+.l-header__logo {
+  margin: 10px 0;
 }
 
 .c-btn-form {
@@ -1074,10 +1074,6 @@ li {
 .p-instagram__btn {
   margin: 24px 3.5%;
   display: inline-block;
-}
-
-.p-header-logo {
-  margin: 10px 0;
 }
 
 .p-main {

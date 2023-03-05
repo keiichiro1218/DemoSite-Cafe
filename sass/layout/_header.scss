@@ -12,10 +12,6 @@
     }
 }
 
-.p-header__logo {
-    margin: 10px 0;
-}
-
 .l-header__inner {
     display: flex;
     width: 94%;
@@ -28,4 +24,9 @@
 		margin-left: 2.5%;
         margin-right: 5%;
 	}
+}
+
+.l-header__logo {
+    margin: 10px 0;
+    
 }
